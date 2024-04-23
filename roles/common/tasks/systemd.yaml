@@ -8,7 +8,7 @@
     daemon_reload: true
 
   - name: "start and enable {{component}}"
-  ansible.builtin.service:
-    name: "{{component}}"
-    state: restarted
-    enabled: yes
+    ansible.builtin.service:
+      name: "{{component}}"
+      state: restarted
+      enabled: yes
