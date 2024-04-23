@@ -8,15 +8,12 @@
     name: common
     tasks_from: nodejs-server
 
-- name: mongodb setup
-  ansible.builtin.role-setup:
-    name: common
-    tasks_from: mongodb-setup
+# - name: mongodb setup
+#   ansible.builtin.role-setup:
+#     name: common
+#     tasks_from: mongodb-setup
 
 - name: systemd service 
   ansible.builtin.role-setup:
     name: common
     tasks_from: systemd
-
-
-
